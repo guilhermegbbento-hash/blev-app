@@ -3,9 +3,9 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 
 const PROFILE_COLORS: Record<string, { bg: string; text: string; label: string }> = {
-  A: { bg: "#2563EB", text: "#fff", label: "Investidor" },
-  B: { bg: "#9333EA", text: "#fff", label: "Ponto Comercial" },
-  C: { bg: "#F97316", text: "#fff", label: "Parceiro Comercial" },
+  A: { bg: "#2563EB", text: "#fff", label: "Cenário A — Ainda não tem ponto" },
+  B: { bg: "#9333EA", text: "#fff", label: "Cenário B — Já tem ponto definido" },
+  C: { bg: "#F97316", text: "#fff", label: "Perfil C — Quer vender projetos" },
 };
 
 function CoinIcon({ size = 28 }: { size?: number }) {
@@ -135,7 +135,7 @@ export default async function ProfilePage() {
               color: profileColor.text,
             }}
           >
-            Perfil {profile.profile_type} &middot; {profileColor.label}
+            {profileColor.label}
           </span>
         </div>
 

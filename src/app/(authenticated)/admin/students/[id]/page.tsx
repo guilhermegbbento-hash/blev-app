@@ -136,7 +136,11 @@ export default async function StudentDetailPage({
             className="text-xs font-bold px-3 py-1 rounded-full"
             style={{ backgroundColor: pc.bg, color: pc.text }}
           >
-            Perfil {student.profile_type}
+            {student.profile_type === "A"
+              ? "Cenário A — Ainda não tem ponto"
+              : student.profile_type === "B"
+              ? "Cenário B — Já tem ponto definido"
+              : "Perfil C — Quer vender projetos"}
           </span>
         </div>
 

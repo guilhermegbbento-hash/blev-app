@@ -17,8 +17,8 @@ export function StudentFilter({
 
   const filters = [
     { key: "ALL", label: "Todos" },
-    { key: "A", label: "Perfil A" },
-    { key: "B", label: "Perfil B" },
+    { key: "A", label: "Cenário A" },
+    { key: "B", label: "Cenário B" },
     { key: "C", label: "Perfil C" },
   ];
 

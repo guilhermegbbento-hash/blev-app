@@ -83,8 +83,8 @@ export default async function AdminPage() {
 
   const metrics = [
     { label: "Total de alunos", value: totalStudents, color: "#C9A84C" },
-    { label: "Perfil A", value: byProfile.A, color: "#2563EB" },
-    { label: "Perfil B", value: byProfile.B, color: "#9333EA" },
+    { label: "Cenário A", value: byProfile.A, color: "#2563EB" },
+    { label: "Cenário B", value: byProfile.B, color: "#9333EA" },
     { label: "Perfil C", value: byProfile.C, color: "#F97316" },
     { label: "Travados (7+ dias)", value: stuckCount, color: "#EF4444" },
   ];

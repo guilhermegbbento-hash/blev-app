@@ -90,18 +90,27 @@ export default async function StudentsPage() {
 
   return (
     <div className="px-4 py-6 max-w-5xl mx-auto">
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center gap-3">
+          <Link
+            href="/admin"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </Link>
+          <h1 className="text-xl font-bold" style={{ color: "#C9A84C" }}>
+            Alunos
+          </h1>
+        </div>
         <Link
-          href="/admin"
-          className="text-gray-400 hover:text-white transition-colors"
+          href="/admin/students/new"
+          className="text-sm font-medium px-4 py-2 rounded-lg transition-all hover:opacity-80"
+          style={{ backgroundColor: "#C9A84C", color: "#0A0A0A" }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          + Novo Aluno
         </Link>
-        <h1 className="text-xl font-bold" style={{ color: "#C9A84C" }}>
-          Alunos
-        </h1>
       </div>
 
       <StudentFilter rows={rows} profileColors={PROFILE_COLORS} />

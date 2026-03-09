@@ -136,7 +136,11 @@ export default async function DashboardPage() {
                   color: profileColor.text,
                 }}
               >
-                Perfil {profile.profile_type}
+                {profile.profile_type === "A"
+                  ? "Cenário A — Ainda não tem ponto"
+                  : profile.profile_type === "B"
+                  ? "Cenário B — Já tem ponto definido"
+                  : "Perfil C — Quer vender projetos"}
               </span>
             </div>
           </div>
